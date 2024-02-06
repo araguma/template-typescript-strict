@@ -1,6 +1,9 @@
 /* eslint-env node */
 
 module.exports = {
+    plugins: ['@trivago/prettier-plugin-sort-imports'],
+
+    /* prettier */
     printWidth: 80,
     tabWidth: 4,
     useTabs: false,
@@ -22,5 +25,8 @@ module.exports = {
     endOfLine: 'lf',
     embeddedLanguageFormatting: 'auto',
     singleAttributePerLine: true,
-    plugins: ['prettier-plugin-organize-imports']
+
+    /* @trivago/prettier-plugin-sort-imports */
+    importOrder: ['<THIRD_PARTY_MODULES>', '^@/(.*)$', '^[./]'],
+    importOrderSeparation: true,
 }

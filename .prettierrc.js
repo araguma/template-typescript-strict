@@ -1,5 +1,7 @@
 /* eslint-env node */
 
+const { version } = require("prettier");
+
 module.exports = {
     plugins: ['@trivago/prettier-plugin-sort-imports'],
 
@@ -24,7 +26,7 @@ module.exports = {
     vueIndentScriptAndStyle: true,
     endOfLine: 'lf',
     embeddedLanguageFormatting: 'auto',
-    singleAttributePerLine: true,
+    singleAttributePerLine: false,
 
     /* @trivago/prettier-plugin-sort-imports */
     importOrder: ['<THIRD_PARTY_MODULES>', '^@/(.*)$', '^[./]'],

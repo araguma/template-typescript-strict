@@ -1,7 +1,5 @@
 /* eslint-env node */
 
-const { version } = require("prettier");
-
 module.exports = {
     plugins: ['@trivago/prettier-plugin-sort-imports'],
 

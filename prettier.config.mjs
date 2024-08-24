@@ -1,10 +1,11 @@
-/* eslint-env node */
+// @ts-check
 
-module.exports = {
-    plugins: ['@trivago/prettier-plugin-sort-imports'],
+/** @type {import("prettier").Config} */
+const prettierConfig = {
+    plugins: ['prettier-plugin-organize-imports'],
 
     /* prettier */
-    printWidth: 80,
+    printWidth: 128,
     tabWidth: 4,
     useTabs: false,
     semi: false,
@@ -25,8 +26,6 @@ module.exports = {
     endOfLine: 'lf',
     embeddedLanguageFormatting: 'auto',
     singleAttributePerLine: false,
-
-    /* @trivago/prettier-plugin-sort-imports */
-    importOrder: ['<THIRD_PARTY_MODULES>', '^@/(.*)$', '^[./]'],
-    importOrderSeparation: true,
 }
+
+export default prettierConfig

@@ -1,7 +1,9 @@
 {
     "scripts": {
-        "lint": "eslint ./ --ext .ts",
-        "format": "prettier ./ --write"
+        "lint": "eslint ./",
+        "lint-fix": "eslint --fix ./",
+        "format": "prettier --check ./",
+        "format-fix": "prettier --write ./"
     },
     "devDependencies": {
         "@eslint/js": "^9.9.1",

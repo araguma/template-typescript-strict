@@ -6,6 +6,9 @@
         "format-fix": "prettier --write ./",
         "start": "tsx src/index.ts"
     },
+    "dependencies": {
+        "tsx": "^4.17.0"
+    },
     "devDependencies": {
         "@eslint/js": "^9.9.1",
         "@tsconfig/strictest": "^2.0.2",
@@ -16,8 +19,5 @@
         "prettier-plugin-organize-imports": "^4.0.0",
         "typescript": "^5.3.3",
         "typescript-eslint": "^8.2.0"
-    },
-    "dependencies": {
-        "tsx": "^4.17.0"
     }
 }
